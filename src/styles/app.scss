@@ -1,0 +1,25 @@
+@import "./statics.scss";
+@import "./landing.scss";
+@import "./home.scss";
+@import "./header.scss";
+@import "./companies.scss";
+@import "./cardsection.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+

@@ -1,0 +1,74 @@
+@import "./statics.scss";
+
+.main-companies {
+    position: relative;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background-color: $bg;
+
+    .backed-text {
+        margin-top: 5rem;
+        z-index: 16;
+        text-align: center;
+        height: 212px;
+        width: 1104px;
+
+
+        p {
+            font-size: 32px;
+            color: $white;
+            font-family: $font-bold;
+
+            span {
+                background: -webkit-linear-gradient(left, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    .gaming-para {
+        margin-top:4rem;
+        z-index: 16;
+        background: transparent;
+        
+        p{
+            margin-top: 1rem;
+            font-size: 22px;
+            line-height: 30.4px;
+            text-align: center;
+            color: $white;
+            font-family: $font-bold;
+        }
+        div {
+            font-size: 46px;
+            line-height: 62.8px;
+            text-align: center;
+            color: $white;
+            font-family: $font-black;
+
+            span {
+                background: -webkit-linear-gradient(left, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .gaming-comp{
+            display: flex;
+            margin-top: 5rem;
+            margin-bottom: 8rem;
+            gap: 60px;
+            flex-wrap: wrap;
+
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+}
