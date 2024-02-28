@@ -11,6 +11,17 @@
     background-color: $bg;
     overflow: hidden;
 
+    .header-gradient-container {
+        top: 0%;
+        position: absolute;
+        background: url(../assets/home/navbar-gradient.png);
+        width: 100%;
+        height: 18.75rem;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
     .home-img {
         position: absolute;
         bottom: 0%;
@@ -29,32 +40,6 @@
             object-fit: cover;
         }
     }
-
-    .gredient {
-        position: absolute;
-        top: -25%;
-        left: 25%;
-        transform: translate(-50%, -50%) rotate(50deg);
-        background-color: #6f00dd43;
-        height: 400px;
-        width: 400px;
-        border-radius: 50%;
-        box-shadow: #6f00dd43 200px 0px 1000px, #6f00dd2d 200px 0px 1000px, #6f00dd3c 200px 0px 1000px, #6f00dd30 200px 0px 1000px, #6f00dd31 200px 0px 1000px;
-    }
-
-    .gredient2 {
-        position: absolute;
-        top: -25%;
-        left: 65%;
-        transform: translate(-50%, -50%) rotate(50deg);
-        ;
-        background-color: #6f00dd23;
-        height: 400px;
-        width: 400px;
-        border-radius: 50%;
-        box-shadow: #6f00dd43 200px 0px 1000px, #6f00dd2d 200px 0px 1000px, #6f00dd3c 200px 0px 1000px, #6f00dd30 200px 0px 1000px, #6f00dd31 200px 0px 1000px;
-    }
-
 
 
     // home content
@@ -177,5 +162,5 @@
         }
     }
 
-  
+
 }

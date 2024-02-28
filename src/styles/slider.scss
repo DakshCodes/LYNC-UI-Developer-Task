@@ -1,0 +1,184 @@
+@import "./statics.scss";
+
+.slider{
+    margin-top: 1.4rem;
+    --slider-items: 1;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 50;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 100%;
+    z-index: 50;
+    background-image: linear-gradient(to var(--gr-direction, right),
+            var(--background) 0%, transparent 100%);
+}
+
+.slider::before {
+    left: 0;
+}
+
+.slider::after {
+    right: 0;
+    --gr-direction: left;
+}
+
+.slider-container {
+    position: relative;
+    /* mandatory for slider */
+    display: flex;
+    justify-content: flex-start;
+    transition: transform 250ms ease;
+    gap: 2rem;
+}
+
+.slider-item {
+    position: relative;
+    height: 291px;
+}
+
+
+.btn-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(217, 217, 217, 0.07);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    border-radius: 50%;
+    font-size: 2.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5);
+    z-index: 60;
+}
+
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.slider-control.prev {
+    z-index: 60;
+    left: 5%;
+}
+
+.slider-control.next {
+    z-index: 60;
+    right: 5%;
+}
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 567px screen
+ */
+
+@media (min-width: 567px) {
+
+    .container {
+        max-width: 480px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .card-slider {
+        --slider-items: 2;
+    }
+
+}
+
+
+
+
+
+/**
+   * responsive for large than 768px screen
+   */
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+    .card-slider {
+        --slider-items: 3;
+    }
+
+}
+
+
+
+
+
+/**
+   * responsive for large than 992px screen
+   */
+
+@media (min-width: 992px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    .card-slider {
+        --slider-items: 4;
+    }
+
+}
+
+
+
+
+
+/**
+   * responsive for large than 1200px screen
+   */
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1150px;
+    }
+
+    .banner-slider {
+        --slider-items: 2;
+    }
+
+    .card-slider {
+        --slider-items: 3;
+    }
+
+}
+
+
+
+
+
+/**
+   * responsive for large than 1400px screen
+   */
+
+@media (min-width: 1400px) {
+
+    .container {
+        max-width: 1400px;
+    }
+
+}

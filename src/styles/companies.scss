@@ -33,42 +33,60 @@
     }
 
     .gaming-para {
-        margin-top:4rem;
-        z-index: 16;
-        background: transparent;
-        
-        p{
+        position: relative;
+        margin-top: 4rem;
+        z-index: 20;
+
+        p {
             margin-top: 1rem;
             font-size: 22px;
             line-height: 30.4px;
             text-align: center;
             color: $white;
             font-family: $font-bold;
+            z-index: 20;
         }
-        div {
+        
+        .title-para{
+            z-index: 20;
             font-size: 46px;
             line-height: 62.8px;
             text-align: center;
             color: $white;
             font-family: $font-black;
-
+            
             span {
                 background: -webkit-linear-gradient(left, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
-
-        .gaming-comp{
+        
+        .gaming-comp {
+            z-index: 20;
             display: flex;
             margin-top: 5rem;
             margin-bottom: 8rem;
             gap: 60px;
             flex-wrap: wrap;
-
-            img{
+            
+            img {
+                z-index: 20;
                 object-fit: contain;
             }
+        }
+
+        .gradient-container{
+            z-index: 10;
+            position: absolute;
+            bottom:0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background: url(../assets/home/chains-section-overlay.png);
+            background-position: center;
+            background-size: 100% 46.5625rem;
+            background-repeat: no-repeat;
         }
     }
 }

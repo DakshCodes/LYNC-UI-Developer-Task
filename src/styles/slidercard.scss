@@ -1,0 +1,130 @@
+@import "./statics.scss";
+
+.slider-card {
+    width: 304px;
+    height: 418px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    overflow: hidden;
+
+    .card a {
+        text-decoration: none
+    }
+
+
+
+    .content {
+        background: -webkit-linear-gradient(rgba(217, 217, 217, 0.07) 100%, rgba(217, 217, 217, 0.05) 100%);
+        padding: 1.1rem;
+        height: 247px;
+    }
+
+    .image {
+        width: 100%;
+        height: 171px;
+        background-color: rgb(239, 205, 255);
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .title {
+        color: $white;
+        font-size: 16px;
+        line-height: 21.6px;
+        font-family: $font-bold;
+    }
+
+
+    .desc {
+        margin-top: 0.5rem;
+        color: rgba(117, 117, 117, 1);
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+
+    .action {
+        display: inline-flex;
+        margin-top: 1rem;
+        color: $black;
+        font-size: 10px;
+        line-height: 13.5px;
+        align-items: center;
+        background-color: $white;
+        padding: 12px 14px 12px 14px;
+        border-radius: 12px;
+        font-family: $font-bold;
+    }
+
+    .action span {
+        transition: .3s ease;
+    }
+
+    .action:hover span {
+        transform: translateX(4px);
+    }
+
+}
+
+// review card
+
+.review-card {
+    width: 304px;
+    height: 310px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    overflow: hidden;
+
+    .review-content {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .review-desc {
+        padding: 16px 20px 16px 20px;
+        height: 230px;
+        width: 100%;
+        background-color: rgba(2, 6, 23, 1);
+        color: $white;
+        font-size: 16px;
+        line-height: 18.9px;
+        font-family: $font1;
+    }
+
+    .review-profile {
+        height:80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 16px 20px 16px 20px;
+        gap: 20px;
+        background: -webkit-linear-gradient(rgba(217, 217, 217, 0.09) 100%, rgba(217, 217, 217, 0.05) 100%);
+
+        .profile{
+            display: flex;
+            align-items: center;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            background-color: $white;
+        }
+        h1{
+            color: $white;
+            font-size: 14px;
+            line-height: 16.94px;
+            text-transform: uppercase;
+            font-family: $font-bold;
+        }
+        p{
+            font-family: $font1;
+            font-size: 8px;
+            line-height: 8.5px;
+            color: rgba(117, 117, 117, 1);
+            margin-top: 0.1rem;
+        }
+    }
+}

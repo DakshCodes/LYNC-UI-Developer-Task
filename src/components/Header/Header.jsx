@@ -5,6 +5,7 @@ import { MoveRight } from 'lucide-react'
 const Header = () => {
   return (
     <div className='header-main'>
+     
       <nav>
         <div className="logo">
           <img src={logo} alt="logo" />

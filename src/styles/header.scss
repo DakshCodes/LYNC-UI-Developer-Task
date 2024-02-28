@@ -11,9 +11,11 @@
     height: 80px;
     width: 1104px;
     top: 62px;
-    z-index: 20;
+    z-index: 99;
     padding: 10px 20px;
     font-family: $font1;
+
+   
 
     nav {
         height: 100%;
@@ -21,13 +23,13 @@
         display: flex;
         justify-content: space-between;
         padding: 8px 0px 8px 0px;
-        
-        .logo{
+
+        .logo {
             height: 40px;
             width: 40px;
             margin-left: 10px;
 
-            img{
+            img {
                 height: 100%;
                 width: 100%;
                 object-fit: contain;
@@ -40,11 +42,11 @@
             justify-content: space-between;
             gap: 10px;
 
-            li{
+            li {
                 list-style: none;
                 text-decoration: none;
 
-                a{
+                a {
                     color: $white;
                     padding: 10px 20px 10px 20px;
                     font-family: $font-bold;

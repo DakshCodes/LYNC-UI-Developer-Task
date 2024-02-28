@@ -9,9 +9,8 @@ import { ArrowRight } from 'lucide-react'
 const Home = () => {
     return (
         <div className="main-home bg-grid-white/[0.03] ">
+            <div className="header-gradient-container"></div>
             <Header />
-            <div className="gredient"></div>
-            <div className="gredient2"></div>
             <div className="home-img">
                 <img src={pattern} alt="pattern" />
             </div>
@@ -36,9 +35,9 @@ const Home = () => {
             <div className="backed">
                 <h1>Backed by</h1>
                 <div className="back-comp">
+                    <img src={logo3} alt="" />
                     <img src={logo1} alt="" />
                     <img src={logo2} alt="" />
-                    <img src={logo3} alt="" />
                 </div>
             </div>
 

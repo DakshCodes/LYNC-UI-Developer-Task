@@ -1,0 +1,106 @@
+@import "./statics.scss";
+
+.main-products {
+    position: relative;
+    height: max-content;
+    width: 100%;
+    overflow: hidden;
+    background-color: $bg;
+    padding: 8rem 0;
+
+    .product-heading {
+        max-width: max-content;
+        color: $white;
+        font-size: 48px;
+        line-height: 64.8px;
+        font-family: $font-black;
+        margin: auto;
+
+        span {
+            background: -webkit-linear-gradient(bottom, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .product-container {
+        padding: 5rem 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: auto;
+        gap: 3rem;
+
+        .gradient-container {
+            z-index: 1;
+            left: 0%;
+            top: 0%;
+            position: absolute;
+            width: 100rem;
+            height: 100rem;
+            background: url(../assets/home/gredient.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .chain-container {
+        margin-top: 5rem;
+        position: relative;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        .gradient-chain {
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%,-50%) ;
+            width: 80rem;
+            height: 50rem;
+             opacity: 0.7;
+            background: url(../assets/home/chains-section-overlay.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .chain-heading {
+            max-width: max-content;
+            color: $white;
+            font-size: 48px;
+            line-height: 64.8px;
+            font-family: $font-black;
+            text-align: center;
+            margin: auto;
+
+            span {
+                background: -webkit-linear-gradient(right, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+
+
+        .chain-companies {
+            position: relative;
+            height: max-content;
+            width: 950px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            row-gap: 2rem;
+            margin: auto;
+
+            img {
+                height: 40px;
+            }
+        }
+
+    }
+}
