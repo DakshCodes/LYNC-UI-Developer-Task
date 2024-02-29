@@ -8,9 +8,11 @@
     background-color: $bg;
     padding: 8rem 0;
 
+
     .product-heading {
         max-width: max-content;
         color: $white;
+        text-align: center;
         font-size: 48px;
         line-height: 64.8px;
         font-family: $font-black;
@@ -24,13 +26,20 @@
     }
 
     .product-container {
-        padding: 5rem 0;
+        padding: 2rem 0;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         width: 70%;
         margin: auto;
         gap: 3rem;
+        
+        @media screen and (max-width: 62em) {
+            padding: 0rem 0;
+            gap: 0rem;
+        }
+
+
 
         .gradient-container {
             z-index: 1;
@@ -52,16 +61,21 @@
         display: flex;
         flex-direction: column;
         gap: 5rem;
+        padding: 0 5rem;
+
+        @media screen and (max-width: 48em) {
+            padding: 0 1.875rem;
+        }
 
         .gradient-chain {
             position: absolute;
             z-index: 1;
             left: 50%;
             top: 70%;
-            transform: translate(-50%,-50%) ;
+            transform: translate(-50%, -50%);
             width: 80rem;
             height: 50rem;
-             opacity: 0.7;
+            opacity: 0.7;
             background: url(../assets/home/chains-section-overlay.png);
             background-size: 100%;
             background-repeat: no-repeat;
@@ -85,10 +99,20 @@
 
 
 
+        @media screen and (max-width: 62em) {
+            .chain-heading {
+                font-size: 2rem;
+                line-height: 38.8px;
+            }
+        }
+
+
+
+
         .chain-companies {
             position: relative;
             height: max-content;
-            width: 950px;
+            max-width: 950px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -96,6 +120,7 @@
             gap: 3rem;
             row-gap: 2rem;
             margin: auto;
+
 
             img {
                 height: 40px;

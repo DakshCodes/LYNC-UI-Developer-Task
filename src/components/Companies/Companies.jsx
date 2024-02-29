@@ -8,6 +8,7 @@ import logo5 from '../../assets/game/91.png'
 const Companies = () => {
     return (
         <div className="main-companies bg-grid-white/[0.02] ">
+               <div className="gradient-companies"></div>
             <div className="backed-text">
                 <p>LYNC provides a scalable infrastructure for launching web3 games, <br /> without hampering the <span>gaming experience.</span> <br /> So that you can deliver the next big hit!</p>
             </div>
@@ -26,7 +27,7 @@ const Companies = () => {
                     Power Up Your Web3 Game <br /> Development, With <span>LYNC SDKs</span>
                 </div>
                 <p>LYNC SDKs can be easily integrated into game engines like Unity 3D <br /> and Unreal Engine in a few clicks.</p>
-                <div className="gradient-container"></div>
+            
 
             </div>
         </div>

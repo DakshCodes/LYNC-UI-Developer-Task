@@ -1,6 +1,6 @@
 @import "./statics.scss";
 
-.slider{
+.slider {
     margin-top: 1.4rem;
     --slider-items: 1;
     position: relative;
@@ -66,7 +66,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    
+
 }
 
 .slider-control.prev {
@@ -77,6 +77,17 @@
 .slider-control.next {
     z-index: 60;
     right: 5%;
+}
+
+@media screen and (max-width: 48em) {
+    .slider-control.prev {
+        left: 0%;
+    }
+
+    .slider-control.next {
+        right: 0%;
+    }
+
 }
 
 

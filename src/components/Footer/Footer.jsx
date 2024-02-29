@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className="main-footer bg-grid-white/[0.02] ">
+        <div className="main-footer bg-grid-white/[0.01] ">
             <div className="footer-title">
                 <img className='lync-logo' src={Lync} alt="Lync" />
                 <h1 className='footer-heading'>Got a game idea ? <br />

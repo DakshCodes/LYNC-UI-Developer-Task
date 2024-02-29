@@ -6,7 +6,8 @@ import eth from '../../assets/game/eth-animation.png'
 
 const CardSections = () => {
   return (
-    <div className='cardsections-main bg-grid-white/[0.03]'>
+    <div className='cardsections-main bg-grid-white/[0.01]'>
+      <div className="gradient-cards"></div>
       <div className="power-card">
         <div className="power-content">
           <h1 className="power-card-title">Don't Worry about the <span>Web3</span> Complexities</h1>

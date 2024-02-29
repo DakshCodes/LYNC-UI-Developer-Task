@@ -12,7 +12,7 @@ const Slider = ({ isCard }) => {
       mainImgsrc: "https://s3-alpha-sig.figma.com/img/0fbb/7420/7c5ddafcd302089a206f32175626e585?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oN~4wGzmovdMjrBLCVf58saXbnDUltMe5WG1dCgC4kuCD7nQ2fRsPMay44MiLSI6dtMjTbk0XVMKfMAanEQXaVY~Fq99vOGlphYgQkuD4aSUA3Q2SSOtgnc~4O8Jb3MkH7NWaR8-U8d5zrntHyM80-L8pyx6kMWvy87a261uwEVNsxLUeJZdge4gOnvLNLAH~CmJTJkwoXlXLk6qWBfqURwS4ktConm5Rl7k40hr-QIWmvsFZQd2Jki-0UR1C8WyY0lttt195IiyXXOFEx8gtZoKuFlwqGI4cjAtNrvVJFj9yqO7-orwECp0hnN8TON8Jl3tLlnmVAmjZchEQqibww__",
     },
     {
-      title: "Dragon’s Den",
+      title: "Dragon's Den",
       mainImgsrc: "https://s3-alpha-sig.figma.com/img/0fbb/7420/7c5ddafcd302089a206f32175626e585?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oN~4wGzmovdMjrBLCVf58saXbnDUltMe5WG1dCgC4kuCD7nQ2fRsPMay44MiLSI6dtMjTbk0XVMKfMAanEQXaVY~Fq99vOGlphYgQkuD4aSUA3Q2SSOtgnc~4O8Jb3MkH7NWaR8-U8d5zrntHyM80-L8pyx6kMWvy87a261uwEVNsxLUeJZdge4gOnvLNLAH~CmJTJkwoXlXLk6qWBfqURwS4ktConm5Rl7k40hr-QIWmvsFZQd2Jki-0UR1C8WyY0lttt195IiyXXOFEx8gtZoKuFlwqGI4cjAtNrvVJFj9yqO7-orwECp0hnN8TON8Jl3tLlnmVAmjZchEQqibww__",
     },
     {

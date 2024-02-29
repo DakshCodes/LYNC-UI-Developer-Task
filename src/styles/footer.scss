@@ -60,6 +60,20 @@
             }
         }
 
+        @media screen and (max-width: 62em) {
+            .footer-heading  {
+                font-size: 2rem;
+                line-height: 38.8px;
+            }
+        }
+
+        @media screen and (max-width: 33em) {
+            .footer-heading  {
+                font-size: 1.4rem;
+            }
+        }
+
+
         button {
             font-family: inherit;
             background: linear-gradient(to bottom, rgba(63, 55, 201, 1) 0%, rgba(76, 201, 240, 1) 190%);
@@ -124,7 +138,7 @@
 
     .footer-content {
         position: relative;
-        height: 70vh;
+        height: max-content;
         width: 100%;
         overflow: hidden;
         padding-bottom: 7.125rem;
@@ -148,9 +162,10 @@
             line-height: 18.9px;
             font-family: $font-bold;
             z-index: 5;
-         a{
-            text-decoration: underline !important;
-         }
+
+            a {
+                text-decoration: underline !important;
+            }
         }
 
         .footer-items {
