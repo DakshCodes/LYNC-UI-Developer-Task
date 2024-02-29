@@ -1,11 +1,17 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import community from '../../assets/home/community-pattern.png'
 import company1 from '../../assets/backed/image.png'
 
 const Community = () => {
     return (
         <div className="main-community bg-grid-white/[0.02] ">
-            <div className="community-circle">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, ease: "circInOut" }}
+                viewport={{ once: true }}
+                className="community-circle">
                 <div className="gradient-circle"></div>
                 <h1 className='circle-heading'>Strongest Web3 <br /> <span>Community</span></h1>
                 <button>
@@ -22,11 +28,21 @@ const Community = () => {
                 <div className="community-img">
                     <img src={community} alt="community" />
                 </div>
-            </div>
+            </motion.div>
             <div className="believers-container">
-                <h1 className="believers-heading">Our <span>Believers and Partners</span></h1>
+                <motion.h1
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, ease: "circInOut" }}
+                    viewport={{ once: true }}
+                    className="believers-heading">Our <span>Believers and Partners</span></motion.h1>
                 <div className="gradient-believers"></div>
-                <div className="believers-companies">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, ease: "circInOut" }}
+                    viewport={{ once: true }}
+                    className="believers-companies">
                     <div className="partner-img">
                         <img src="https://s3-alpha-sig.figma.com/img/dbdc/7e9a/bfcd02ad161d771b33c514344895a2c0?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=L9P~G01ALeqmTloAMOeqIrEQT2AwDlS~MFbROOqjR4ZBtVpMNh47dXswXNje6eHiZuwf-aqV00UTadqA25pYJSxkkABq58S8e8gAUdbzofR4Am4GagGi-9SSf6YwNpmsJ78~X0621S55X~~waC5CGKBDk-6a~hItlfH3M310IZb80SQSXZrct8Ro-96u~5-oUDugEJXzpDkB1pBE-c~S4VZ6lqD0zAcyUNZ3FnPn3NT9at-fGa~JJy0LlqxjJpv9D2CgIgH2zo3Nda2wcXDA1I4anC7A9x55jWHClVeP6NK9eLNBqVhYSqZhRV3BLMbO7ag4-5kC1gO6JDfxFxxmNg__" alt="company1" />
                     </div>
@@ -51,7 +67,7 @@ const Community = () => {
                     <div className="partner-img">
                         <img src={"https://s3-alpha-sig.figma.com/img/f773/e7cb/2a5b181e33c8a3dbfc6485db0af345a8?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e0stWHF~XMzVHetgEjjmGzHMHoLOvIYXyIMKIVbQI8nrZ1-T0l7qik6MQfpYcwcOfuV5SwLH-DNBP9-GPEA5~CTqc2kCyKZsVkGHasDg9YTcUgvgwKvHKYo8eXuYBqXXtTq4~KekHPUwkwnqpKspRjPNQ8Yc9wbZ0dXGXxrRZT-i2QCXqgVo~CCl9rm2ySdhlKLnAuxWUPw2u4qg5AlKw~cpgmnPIIoYcv-5pNIfDJfqmIajpJ6M6BZjnVdwLHf6bMA8t1pF4cjOamnbvVMl5rhaLmh2J1qe3qqdaaE8plDek7UJy-BlJndnOZlIryVWi-U3S61nJ1Ww74V3f3zdBg__"} alt="company1" />
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

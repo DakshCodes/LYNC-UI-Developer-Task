@@ -64,6 +64,7 @@
 
 
         h1 {
+            opacity: 0;
             color: $white;
             font-size: 5rem;
             font-family: $font-black;
@@ -115,7 +116,7 @@
             flex-wrap: wrap;
             justify-content: center;
             padding: 0 3rem;
-
+            
             .button {
                 flex-grow: 1;
                 text-decoration: none;
@@ -130,7 +131,7 @@
                 padding: 8px 26px 8px 26px;
                 letter-spacing: 0.25px;
                 overflow: hidden;
-                transition: background-color .3s;
+                // transition: background-color .3s;
                 font-size: 14px;
             }
 
@@ -154,7 +155,7 @@
                 padding: 8px 26px 8px 26px;
                 letter-spacing: 0.25px;
                 overflow: hidden;
-                transition: background-color .3s;
+                // transition: background-color .3s;
                 font-size: 14px;
             }
 

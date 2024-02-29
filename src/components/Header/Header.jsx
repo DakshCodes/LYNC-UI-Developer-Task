@@ -1,18 +1,37 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from '../../assets/home/logo.png'
 import { MoveRight } from 'lucide-react'
+import { animate, motion, stagger } from 'framer-motion'
 
 const Header = () => {
+
+  useEffect(() => {
+    animate(".menu-items li", { opacity: 1 }, { delay: stagger(0.1, { startDelay: 0.5 }) })
+  }, []);
+
   return (
     <div className="header-container">
-      <div className='header-main'>
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: "backInOut" }}
+        className='header-main'>
         <nav>
-          <button id="header-menu-btn" className="header-menu-btn">
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "circInOut" }}
+            viewport={{ once: true }}
+            id="header-menu-btn" className="header-menu-btn">
             <img src="https://lync.world/app/assets/menu.png" alt="menu" className="menu-img" />
-          </button>
-          <div className="logo">
+          </motion.button>
+          <motion.div
+            initial={{ x: -40, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.3, ease: "backInOut" }}
+            className="logo">
             <img src={logo} alt="logo" />
-          </div>
+          </motion.div>
           <ul className="menu-items">
             <li>
               <a href="#">Home</a>
@@ -30,12 +49,16 @@ const Header = () => {
               <a href="#">Request a demo</a>
             </li>
           </ul>
-          <button className="button">
+          <motion.button
+            initial={{ opacity: 0, x: -30, }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3, delay: 0.8 }}
+            className="button">
             Get started
             <MoveRight strokeWidth={1.8} size={18} />
-          </button>
+          </motion.button>
         </nav>
-      </div>
+      </motion.div>
     </div>
   )
 }

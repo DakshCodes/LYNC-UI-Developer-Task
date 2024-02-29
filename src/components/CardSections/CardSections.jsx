@@ -2,13 +2,19 @@ import React from 'react'
 import gameAnimation from '../../assets/game/game-animation.gif'
 import mediumAnimation from '../../assets/home/medium-animation.gif'
 import eth from '../../assets/game/eth-animation.png'
+import {motion} from 'framer-motion'
 
 
 const CardSections = () => {
   return (
     <div className='cardsections-main bg-grid-white/[0.01]'>
       <div className="gradient-cards"></div>
-      <div className="power-card">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "circInOut" }}
+        viewport={{ once: true }}
+        className="power-card">
         <div className="power-content">
           <h1 className="power-card-title">Don't Worry about the <span>Web3</span> Complexities</h1>
           <ul className='power-point-list'>
@@ -21,9 +27,14 @@ const CardSections = () => {
         <div className="power-img">
           <img src={eth} alt="" />
         </div>
-      </div>
+      </motion.div>
       <div className="project-done">
-        <div className="project-docs">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: "circInOut" }}
+          viewport={{ once: true }}
+          className="project-docs">
           <div className="docs-content">
             <h1>
               Elevate Your Gameplay <br /> with Essential Insights!
@@ -36,8 +47,13 @@ const CardSections = () => {
           <div className="remote-img">
             <img src={gameAnimation} alt="" />
           </div>
-        </div>
-        <div className="contracts">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: "circInOut" }}
+          viewport={{ once: true }}
+          className="contracts">
           <div className="contracts-box">
             <h1>200+</h1>
             <p>Projects have <br /> downloaded &<br />integrated LYNC SDKs</p>
@@ -46,8 +62,13 @@ const CardSections = () => {
             <h1>8000+</h1>
             <p>Contracts have been <br /> deployed via LYNC</p>
           </div>
-        </div>
-        <div className="user-ops">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: "circInOut" }}
+          viewport={{ once: true }}
+          className="user-ops">
           <div className="ops-content">
             <h1>50000+</h1>
             <p>User ops created in 10 <br /> hours</p>
@@ -55,7 +76,7 @@ const CardSections = () => {
               <img src={mediumAnimation} alt="" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
