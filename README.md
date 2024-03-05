@@ -1,8 +1,44 @@
-# React + Vite
+# LYNC-UI-Developer-Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project aims to create a visually appealing and user-friendly web application adhering to modern design best practices. The UI will be responsive, adapting seamlessly to different screen sizes, and will be implemented using ReactJs. The project focuses on achieving an optimal user experience on various devices while considering visual aesthetics, usability, performance, and cross-browser compatibility.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+- **ReactJs:** Used for structuring the webpage.
+- **Framer-motion:** Applied Micro-animation to webpage and enhance visual aesthetics.
+- **Sass:** Applied Saas Stylesheet for styling webpages.
+
+## Features
+
+1. **Responsive Design:** The UI adapts seamlessly to different screen sizes (desktop, tablet, and mobile) using media queries or other suitable techniques.
+
+2. **Visual Aesthetics:** Utilized appropriate colors, fonts, and imagery to create an appealing design.
+
+3. **Usability:** Ensured the design is intuitive and easy to navigate for an enhanced user experience.
+
+4. **Performance Optimization:** Optimized page loading speed by minimizing file sizes and following best practices.
+
+
+## How to Run Locally
+
+1. Clone the repository: `git clone [repository_link]`
+2. Navigate to the project directory: `cd [project_directory]`
+3. Run the command in terminal `npm install`.
+3. For start run the command in terminal `npm run dev` .
+
+
+## Project Structure
+
+- **/assets:** Contains all assets.
+- **/components:** Contains components.
+- **/pages:** Contains pages.
+- **/styles:** Contains all styling files .
+
+
+## Contact
+
+If you have any questions or need clarification, please reach out to Daksh Singh at dakshsinghk2524@gmail.com.
+
+**Thank you for reviewing the project!**
