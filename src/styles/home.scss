@@ -31,7 +31,7 @@
         position: absolute;
         bottom: 0%;
         width: 100%;
-        height: 70vh;
+        height: 100vh;
         background-color: #020617c3;
         display: flex;
         justify-content: baseline;
@@ -40,9 +40,9 @@
         box-shadow: $bg -100px 0px 1000px, $bg -100px 0px 1000px, $bg -100px 0px 1000px, $bg -100px 0px 1000px, $bg -100px 0px 1000px;
 
         img {
-            height: 120%;
+            height: 100%;
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 

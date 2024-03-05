@@ -2,7 +2,7 @@ import React from 'react'
 import gameAnimation from '../../assets/game/game-animation.gif'
 import mediumAnimation from '../../assets/home/medium-animation.gif'
 import eth from '../../assets/game/eth-animation.png'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 
 const CardSections = () => {
@@ -48,35 +48,38 @@ const CardSections = () => {
             <img src={gameAnimation} alt="" />
           </div>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, ease: "circInOut" }}
-          viewport={{ once: true }}
-          className="contracts">
-          <div className="contracts-box">
-            <h1>200+</h1>
-            <p>Projects have <br /> downloaded &<br />integrated LYNC SDKs</p>
-          </div>
-          <div className="contracts-box">
-            <h1>8000+</h1>
-            <p>Contracts have been <br /> deployed via LYNC</p>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, ease: "circInOut" }}
-          viewport={{ once: true }}
-          className="user-ops">
-          <div className="ops-content">
-            <h1>50000+</h1>
-            <p>User ops created in 10 <br /> hours</p>
-            <div className="medium-img">
-              <img src={mediumAnimation} alt="" />
+        <div className="reach-main">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "circInOut" }}
+            viewport={{ once: true }}
+            className="contracts">
+            <div className="contracts-box">
+              <h1>200+</h1>
+              <p>Projects have <br /> downloaded &<br />integrated LYNC SDKs</p>
             </div>
-          </div>
-        </motion.div>
+            <div className="contracts-box">
+              <h1>8000+</h1>
+              <p>Contracts have been <br /> deployed via LYNC</p>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "circInOut" }}
+            viewport={{ once: true }}
+            className="user-ops">
+            <div className="ops-content">
+              <h1>50000+</h1>
+              <p>User ops created in 10 <br /> hours</p>
+              <div className="medium-img">
+                <img src={mediumAnimation} alt="" />
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
       </div>
     </div>
   )

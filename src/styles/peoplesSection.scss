@@ -7,11 +7,7 @@
     overflow: hidden;
     background-color: $bg;
     padding-top: 6rem;
-    padding: 0 5rem;
 
-    @media screen and (max-width: 48em) {
-        padding: 0 1.875rem;
-    }
 
     .slider {
         display: flex;
@@ -40,72 +36,121 @@
         left: 50%;
         top: 0%;
         transform: translate(-50%, -50%);
-        width: 90rem;
-        height: 90rem;
-        opacity: 0.7;
+        width: 100%;
+        height: 100%;
         background: url(../assets/home/chains-section-overlay.png);
         background-size: 100%;
         background-repeat: no-repeat;
     }
 
+    .blog-section {
+        padding: 0 5rem;
 
-    .blog-heading {
-        max-width: max-content;
-        color: $white;
-        font-size: 48px;
-        line-height: 64.8px;
-        font-family: $font-black;
-        margin: auto;
-        text-align: center;
 
-        span {
-            background: -webkit-linear-gradient(bottom, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        @media screen and (max-width: 48em) {
+            padding: 0 1.875rem;
         }
-    }
 
 
 
-    .blog-desc {
-        max-width: max-content;
-        color: $white;
-        font-size: 24px;
-        line-height: 32.4px;
-        font-family: $font-bold;
-        text-align: center;
-        margin: auto;
-        margin-top: 1.5rem;
-    }
+        .blog-heading {
+            max-width: max-content;
+            color: $white;
+            font-size: 48px;
+            line-height: 64.8px;
+            font-family: $font-black;
+            margin: auto;
+            text-align: center;
+            padding: 0 5rem;
 
-    @media screen and (max-width: 62em) {
+
+            @media screen and (max-width: 48em) {
+                padding: 0 1.875rem;
+            }
+
+
+            span {
+                background: -webkit-linear-gradient(bottom, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+
+
         .blog-desc {
-            font-size: 1.5rem;
-            line-height: 30.8px;
+            max-width: max-content;
+            color: $white;
+            font-size: 24px;
+            line-height: 32.4px;
+            font-family: $font-bold;
+            text-align: center;
+            margin: auto;
+            margin-top: 1.5rem;
+
         }
+
+        @media screen and (max-width: 62em) {
+            .blog-desc {
+                font-size: 1.5rem;
+                line-height: 30.8px;
+            }
+        }
+
+        @media screen and (max-width: 33em) {
+            .blog-desc {
+                font-size: 1rem;
+            }
+        }
+
     }
 
-    @media screen and (max-width: 33em) {
-        .blog-desc {
-            font-size: 1rem;
-        }
-    }
 
     .review-section {
         margin-top: 10rem;
         position: relative;
+        width: 100%;
+        padding: 0 5rem;
+
+        .blog-heading {
+            max-width: max-content;
+            color: $white;
+            font-size: 48px;
+            line-height: 64.8px;
+            font-family: $font-black;
+            margin: auto;
+            text-align: center;
+            padding: 0 5rem;
+
+
+            @media screen and (max-width: 48em) {
+                padding: 0 1.875rem;
+            }
+
+
+            span {
+                background: -webkit-linear-gradient(bottom, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+
+        @media screen and (max-width: 48em) {
+            padding: 0 1.875rem;
+        }
+
 
         .gradient-review {
             position: absolute;
             z-index: 1;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+            left: 0%;
+            top: 0%;
             width: 100%;
             height: 100%;
             background: url(../assets/home/chains-section-overlay.png);
             background-position: center;
-            background-size: 100% 46.5625rem;
+            background-size: 100% 36.5625rem;
             background-repeat: no-repeat;
         }
     }

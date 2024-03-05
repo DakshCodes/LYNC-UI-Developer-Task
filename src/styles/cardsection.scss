@@ -45,6 +45,7 @@
         align-items: center;
 
 
+
         .power-content {
             display: flex;
             flex-direction: column;
@@ -167,14 +168,16 @@
     .project-done {
         margin-top: 8rem;
         z-index: 20;
-        height: 100%;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        padding: 0 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 69rem;
+        grid-gap: 1rem;
+
+
+        @media screen and (max-width: 68.75em) {
+            grid-template-columns: 1fr;
+        }
 
         @media screen and (max-width: 85em) {
             padding: 0 1.8rem;
@@ -186,18 +189,16 @@
 
         .project-docs {
             flex-grow: 1;
-            width: 20rem;
             height: 20.5625rem;
-            border-left: 1px solid rgba(255, 255, 255, 0.21);
-            border-radius: 32.24px;
+            padding: 1.9375rem 2.4375rem;
+            border-radius: 2rem;
             background-image: url(../assets/home/docs-card-background.png);
             background-size: 100% 100%;
             background-position: center;
             background-repeat: no-repeat;
-            display: flex;
-            padding: 1.9375rem 2.4375rem;
-            justify-content: space-between;
-            gap: 0rem;
+            position: relative;
+            z-index: 5;
+            border: 1px solid hsla(0, 0%, 100%, 0.15);
 
             @media screen and (max-width: 33.75em) {
                 height: 12.5rem;
@@ -209,7 +210,7 @@
             @media screen and (max-width: 48em) {
                 justify-content: center;
             }
-            
+
             .docs-content {
                 flex-grow: 1;
                 display: flex;
@@ -217,10 +218,11 @@
                 justify-content: flex-start;
                 gap: 1.5rem;
                 width: 100%;
-                
+
                 @media screen and (max-width: 48em) {
                     gap: 1rem;
                 }
+
                 h1 {
                     color: $white;
                     font-size: 24px;
@@ -276,7 +278,11 @@
                 flex-grow: 1;
                 width: 12.5rem;
                 height: 12.5rem;
-                align-self: center;
+                transform: rotate(15deg);
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
 
                 img {
                     display: inline-block;
@@ -286,102 +292,122 @@
                     user-select: none;
                     -webkit-user-drag: none;
                 }
+
+                @media screen and (max-width: 33.75em) {
+                    width: 8.375rem;
+                    height: 8.375rem;
+                }
+
             }
 
 
         }
 
-        .contracts {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.2rem;
-            flex-grow: 1;
+        .reach-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            height: 20.5625rem;
 
-            .contracts-box {
+            @media screen and (max-width: 33.75em) {
+                grid-template-columns: 1fr;
+                height: unset;
+            }
+
+            .contracts {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.2rem;
                 flex-grow: 1;
-                width: 100%;
-                height: 153px;
-                border: 1px solid rgba(255, 255, 255, 0.21);
-                border-radius: 32px;
-                padding: 15px;
-                background-color: rgba(217, 217, 217, 0.07);
 
-                h1 {
-                    font-size: 38px;
-                    color: $white;
-                    font-family: $font-black;
-                    line-height: 51.3px;
-                    background: -webkit-linear-gradient(left, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
+                .contracts-box {
+                    flex-grow: 1;
+                    width: 100%;
+                    height: 153px;
+                    border: 1px solid rgba(255, 255, 255, 0.21);
+                    border-radius: 32px;
+                    padding: 15px;
+                    background-color: rgba(217, 217, 217, 0.07);
 
-                p {
-                    font-size: 16px;
-                    color: rgba(117, 117, 117, 1);
-                    font-family: $font-bold;
-                    line-height: 21.6px;
-                }
-
-                &:nth-of-type(2) {
                     h1 {
-                        background: -webkit-linear-gradient(left, rgba(255, 2, 118, 1), rgba(114, 9, 183, 1));
+                        font-size: 38px;
+                        color: $white;
+                        font-family: $font-black;
+                        line-height: 51.3px;
+                        background: -webkit-linear-gradient(left, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
-                }
 
+                    p {
+                        font-size: 16px;
+                        color: rgba(117, 117, 117, 1);
+                        font-family: $font-bold;
+                        line-height: 21.6px;
+                    }
+
+                    &:nth-of-type(2) {
+                        h1 {
+                            background: -webkit-linear-gradient(left, rgba(255, 2, 118, 1), rgba(114, 9, 183, 1));
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+
+                }
             }
-        }
 
-        .user-ops {
-            flex-grow: 1;
-            border: 1px solid rgba(255, 255, 255, 0.21);
-            padding: 15px;
-            background-color: rgba(217, 217, 217, 0.07);
-            border-radius: 2rem;
-            padding: 0.75rem 1.25rem;
+            .user-ops {
+                flex-grow: 1;
+                border: 1px solid rgba(255, 255, 255, 0.21);
+                padding: 15px;
+                background-color: rgba(217, 217, 217, 0.07);
+                border-radius: 2rem;
+                padding: 0.75rem 1.25rem;
 
-            .ops-content {
-                display: flex;
-                flex-direction: column;
+                .ops-content {
+                    display: flex;
+                    flex-direction: column;
 
-                h1 {
-                    width: max-content;
-                    font-size: 38px;
-                    color: $white;
-                    font-family: $font-black;
-                    line-height: 51.3px;
-                    background: -webkit-linear-gradient(left, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
+                    h1 {
+                        width: max-content;
+                        font-size: 38px;
+                        color: $white;
+                        font-family: $font-black;
+                        line-height: 51.3px;
+                        background: -webkit-linear-gradient(left, rgba(63, 55, 201, 1), rgba(76, 201, 240, 1));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
 
-                p {
-                    width: max-content;
-                    font-size: 16px;
-                    color: rgba(117, 117, 117, 1);
-                    font-family: $font-bold;
-                    line-height: 21.6px;
-                }
+                    p {
+                        width: max-content;
+                        font-size: 16px;
+                        color: rgba(117, 117, 117, 1);
+                        font-family: $font-bold;
+                        line-height: 21.6px;
+                    }
 
-                .medium-img {
-                    align-self: flex-end;
-                    width: 12.5rem;
-                    height: 12.5rem;
-                    align-self: center;
+                    .medium-img {
+                        align-self: flex-end;
+                        width: 12.5rem;
+                        height: 12.5rem;
+                        align-self: center;
 
-                    img {
-                        display: inline-block;
-                        max-width: 100%;
-                        max-height: 100%;
-                        object-fit: cover;
-                        user-select: none;
-                        -webkit-user-drag: none;
+                        img {
+                            display: inline-block;
+                            max-width: 100%;
+                            max-height: 100%;
+                            object-fit: cover;
+                            user-select: none;
+                            -webkit-user-drag: none;
+                        }
                     }
                 }
             }
         }
+
+
     }
 }

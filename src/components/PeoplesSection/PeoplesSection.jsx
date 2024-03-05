@@ -4,9 +4,9 @@ import Slider from '../Slider/Slider'
 
 const PeoplesSection = () => {
     return (
-        <div className="main-peoples bg-grid-white/[0.02] ">
+        <div className="main-peoples bg-grid-white/[0.01] ">
             <div className="gradient-blog"></div>
-            <div>
+            <div className='blog-section'>
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

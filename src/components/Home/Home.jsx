@@ -14,7 +14,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="main-home bg-grid-white/[0.03] ">
+        <div className="main-home bg-grid-white/[0.06] ">
             <div className="header-gradient-container"></div>
             <Header />
             <motion.div className="home-img">
